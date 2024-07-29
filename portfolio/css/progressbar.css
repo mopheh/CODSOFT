@@ -1,0 +1,62 @@
+.circle {
+  position: relative;
+  margin: 0 auto;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  cursor: default;
+}
+.circle .box,
+.circle .box span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.circle .box {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 50% !important;
+  border: none !important;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.2s;
+}
+.circle:hover .box {
+  transform: translate(-50%, -50%) scale(0.91);
+}
+.circle .box span,
+.wrapper .card .text {
+  color: #732e51;
+}
+.circle .box span {
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+.circle:hover .box span {
+  transform: translate(-45%, -45%) scale(1.09);
+}
+.text {
+  margin-bottom: 6%;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 753px) {
+  .wrapper {
+    max-width: 700px;
+  }
+}
+@media (max-width: 505px) {
+  .wrapper {
+    max-width: 500px;
+  }
+  .wrapper .div {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&family=Karla:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;500;700;900&family=Play:wght@400;700&family=Kanit:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&family=Exo+2:wght@300;400&family=Mukta:wght@200;300;400;500;600;700&family=Cabin:wght@400;500;700&family=Cairo:wght@400;500;700&family=Josefin+Sans:wght@300;400;500&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Salsa&display=swap&family=Roboto:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@300;400;500&family=Montserrat:wght@200;300;500&family=Karla:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500&family=Kanit:wght@300;400;600;700&family=Source+Sans+Pro:wght@300;400;500;700;900&family=Play:wght@400;700&family=Cabin:wght@300;400;700&family=Josefin+Sans:wght@300;400;500&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/progressbar.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <title>Adejare Omomofe | Web Developer</title>
+  </head>
+
+  <body class="no-scroll-y">
+    <div class="row preloader">
+      <div class="col-sm-2">
+        <div id="wave1"></div>
+      </div>
+    </div>
+    <input type="checkbox" id="check" />
+
+    <label for="check">
+      <div class="check-btn">
+        <span id="btn"><i class="fas fa-bars"></i></span>
+        <span id="cancel"><i class="fas fa-times"></i></span>
+      </div>
+    </label>
+
+    <!-- <nav>
+    <div class="drop-btn">
+      <p></p> <span class="fas fa-caret-down"></span>
+    </div>
+    <div class="tooltip"></div>
+    <div class="wrapper">
+      <ul class="menu-bar">
+        <li> <a href="/" id="home">Home</a></li>
+        <li> <a href="/about" id="about">About</a></li>
+        <li> <a href="/contact" id="contact">Contact</a></li>
+        <li> <a href="/projects" id="projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav> -->
+    <div class="underlay"></div>
+    <div class="nav">
+      <div class="brand">
+        <h4>Mopheh</h4>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="/" id="home">
+              <i class="fa fa-home fa-sm"></i> <span> Home</span></a
+            >
+          </li>
+          <li>
+            <a href="/about" id="about">
+              <i class="fa fa-user fa-sm"></i> <span> About</span></a
+            >
+          </li>
+          <li>
+            <a href="/contact" id="contact"
+              ><i class="fa fa-envelope-open fa-sm"></i>
+              <span> Contact</span></a
+            >
+          </li>
+          <li>
+            <a href="/projects" id="projects"
+              ><i class="fa fa-folder-open"></i> <span> Projects</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="social-icons">
+        <ul>
+          <li>
+            <a href="https://facebook.com/omomofe.adejare" target="_blank">
+              <i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/mopheh" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/moepheh" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/codethaway" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="overflow-x-hidden">
+        <div class="home-container row">
+
+            <div class="col-12 cover-photo"></div>
+            <div class="container-text col-lg-6 col-12">
+              <h5>HEY THERE!</h5>
+              <h1>I'm Adejare Omomofe</h1>
+              <hr />
+              <h3 class="career">
+                Web <span id="career">Developer</span>
+                <span>Designer</span>
+              </h3>
+              <div class="intro">
+                <p>
+                  Hard-working web developer experienced in designing, developing,
+                  testing, debugging and deploying various web applications. I'm
+                  extremely passionate towards creating elegant solutions in the least
+                  amount of time to suite customers needs.
+                </p>
+              </div>
+              <a class="cta" href="/contact">
+                <div class="circle"></div>
+                <span class="hover-underline-animation"> Hire me</span>
+                <svg
+                  id="arrow-horizontal"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="10"
+                  viewBox="0 0 46 16"
+                >
+                  <path
+                    id="Path_10"
+                    data-name="Path 10"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    transform="translate(30)"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="image col-lg-3 col-12">
+              <div class="my-image"></div>
+              <div class="title-div">
+                <div class="title-head">
+                  <h3 class="career">
+                    Web <span id="career">Developer</span>
+                    <span>Designer</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+        </div>
+      <div class="about-section">
+        <div class="about-body">
+          <div class="personal-infos row">
+            <div class="infos w-100">
+              <div class="w-75 row ml-auto">
+                <div class="col-12 px-3 mb-3">
+                  <h6 class="meet">MEET ME</h6>
+                  I am a self-driven Web Developer. I possess a great enthusiasm
+                  for both development and design. I have a strong drive to
+                  create visually appealing products, with a particular focus on
+                  web applications. My expertise lies in utilizing React and
+                  Node.js to build these products. An outstanding quality of
+                  mine is my constant eagerness to learn and expand my knowledge
+                  within my field.
+                </div>
+                <div class="col-lg-9 col-12 d-flex info">
+                  <div class="col-6">
+                    <span class="labels">Name:</span>
+                    <span
+                      class="d-block d-sm-inline-block d-lg-block d-xl-inline-block"
+                    >
+                      Adejare Omomofe
+                    </span>
+                  </div>
+                  <div class="col-6">
+                    <span class="labels">Nationality:</span>
+                    <span
+                      class="d-block d-sm-inline-block d-lg-block d-xl-inline-block"
+                      >Nigeria</span
+                    >
+                  </div>
+                </div>
+                <a class="col-lg-3 col-6 cv-button my-3" href="Adejare Omomofe Resume.pdf" download>Download Resume</a>
+                
+                <div class="col-lg-9 col-12 d-flex info">
+                  <div class="col-6">
+                    <span class="labels">Github:</span>
+                    <a
+                      href="https://github.com/mopheh"
+                      class="d-block d-sm-inline-block d-lg-block d-xl-inline-block"
+                      >Mopheh</a
+                    >
+                  </div>
+                  <div class="col-6">
+                    <span class="labels">Freelance:</span>
+                    <span
+                      class="d-block d-sm-inline-block d-lg-block d-xl-inline-block"
+                      >Available</span
+                    >
+                  </div>
+                </div>
+                <hr class="divide" />
+                <div class="row">
+                  <div class="col-12 col-lg-6 flex-column service d-flex">
+                    <h4 class="my-2 mt-3">Front-End Web Development</h4>
+                    <p>
+                      My focus is on building impressive, visually appealing,
+                      and user-friendly websites that help businesses excel.
+                    </p>
+                  </div>
+                  <div class="col-12 col-lg-6 flex-column service d-flex">
+                    <h4 className="my-2 mt-3">Back-End Web Development</h4>
+                    <p>
+                      I deliver sustainable solutions to server-side challenges
+                      by utilizing modern technologies like Node.js and MongoDB,
+                      and creating powerful functionalities that drive the
+                      front-end user interface.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="attribute col-12 col-lg-5">
+        <div class="drum-image"></div>
+      </div> -->
+          </div>
+          <hr />
+          <div class="skills">
+            <h2 class="f-js skill-head">Development Skills</h2>
+            <div class="d-flex align-items-center">
+              <div class="ski-text">
+                <h3 class="title">
+                  Stack <i class="fa-solid fa-screwdriver-wrench"></i>
+                </h3>
+                <p class="w-75">
+                  These are are some technologies and frameworks I frequently
+                  use in my daily work and projects, with which I am familiar
+                </p>
+              </div>
+              <div class="row wrapper mt-4 mb-4">
+                <div class="col-lg-3 col-md-4 col-6 div">
+                  <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                  </div>
+                  <div class="text">HTML & CSS</div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 js div">
+                  <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                  </div>
+                  <div class="text">JavaScript</div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 ejs div">
+                  <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                  </div>
+                  <div class="text">EJS</div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mongodb div">
+                  <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                  </div>
+                  <div class="text">MongoDB</div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 react div">
+                  <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                  </div>
+                  <div class="text">React JS</div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 node div">
+                  <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                  </div>
+                  <div class="text">Node JS</div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 php div">
+                  <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                  </div>
+                  <div class="text">PHP</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="education mb-5">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="mt-4 mb-4 education-head">
+                  CERTIFICATIONS & EDUCATION
+                </h2>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="resume-container">
+                  <div class="resume-info">
+                    <div class="icon">
+                      <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="resume-text">
+                      <span class="duration">
+                        September 2020 - October 2021</span
+                      >
+                      <h5 class="title">
+                        UDEMY -
+                        <span
+                          class="d-block d-sm-inline-block d-lg-block d-xl-inline-block"
+                          >COMPLETE WEB DEVELPOMENT BOOTCAMP</span
+                        >
+                      </h5>
+                      <p>A full-stack web development course.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="resume-container">
+                  <div class="resume-info">
+                    <div class="icon">
+                      <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="resume-text">
+                      <span class="duration"> 2021 - NOW</span>
+                      <h5 class="title">
+                        B.ENG -
+                        <span
+                          class="d-block d-sm-inline-block d-lg-block d-xl-inline-block"
+                          >UNIVERSITY OF BENIN</span
+                        >
+                      </h5>
+                      <p>
+                        Bachelor of Engineering(B.ENG ELECTRICAL/ELECTRONICS
+                        ENGINEERING)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="resume-container">
+                  <div class="resume-info">
+                    <div class="icon">
+                      <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="resume-text">
+                      <span class="duration"> 2013 - 2019</span>
+                      <h5 class="title">
+                        SSCE -
+                        <span
+                          class="d-block d-sm-inline-block d-lg-block d-xl-inline-block"
+                          >ORIWU SENIOR MODEL COLLEGE</span
+                        >
+                      </h5>
+                      <p>West African Senior Secondary School Certificate</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="resume-container">
+                  <div class="resume-info">
+                    <div class="icon">
+                      <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="resume-text">
+                      <span class="duration"> 2006 - 2013</span>
+                      <h5 class="title">
+                        FLSC -
+                        <span
+                          class="d-block d-sm-inline-block d-lg-block d-xl-inline-block"
+                          >QUEEN BETTY PRIMARY SCHOOL</span
+                        >
+                      </h5>
+                      <p>First School Leaving Certificate.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-section">
+        <div class="project-head">
+          <h1>MY PROJECTS</h1>
+        </div>
+        <div class="row projects">
+          <div class="col-lg-4 col-md-6 col-12">
+            <img
+              src="images/projectDesign/ip-address-tracker.png"
+              alt="project"
+            />
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <img src="images/projectDesign/chat-app-login.png" alt="project" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <img src="images/projectDesign/chat-desktop.png" alt="project" />
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 last-image">
+            <img
+              src="images/projectDesign/video-converter.png"
+              class="desktop"
+              alt="project"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+  <div>
+    <div class="contact-head mb-4">
+      <h2>GET IN TOUCH</h2>
+    </div>
+    <div class="contact-text row">
+      <div class="bg col-lg-6 col-12 ">
+        <div class="bg-color">
+          <div class="contact-left">
+            <div class="mb-4">
+              <h3 class="mb-2">100% Availability.</h3>
+              <p>Feel free to contact me or feel the form and i will get back to you within 24 hours.</p>
+            </div>
+            <div class="contact-info">
+              <div class="info">
+                <span class="icon"><i class="fas fa-phone-alt"></i></span>
+                <span>+234 817 844 1246</span>
+              </div>
+              <div class="info">
+                <span class="icon"><i class="fas fa-envelope-open"></i></span>
+                <span>omomofeadejare01@gmail.com</span>
+              </div>
+              <div class="info">
+                <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                <span> Ikorodu, Lagos State</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-8 col-12 contact-right">
+        <form>
+          <div class="contact-form">
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <input id="name" type="text" placeholder="Your Full-Name" name="name" value="" required>
+              </div>
+              <div class="col-12 col-lg-4">
+                <input id="subject" type="text" placeholder="Your Subject" name="subject" value="" required>
+              </div>
+              <div class="col-12 col-lg-4">
+                <input type="text" id="email" placeholder="Your Email" name="email" value="" required>
+              </div>
+              <div class="col-12">
+                <textarea id="message" name="message" placeholder="Your Message" rows="8" cols="80" value="" required></textarea>
+              </div>
+            </div>
+          </div>
+          <button type="submit">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                </svg>
+              </div>
+            </div>
+            <span>Send Email</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+      charset="utf-8"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"
+      charset="utf-8"
+    ></script>
+    <script src="bootstrap.bundle.min.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
