@@ -1,6 +1,5 @@
 document.querySelectorAll(".input-value").forEach((element) => {
   element.addEventListener("click", (e) => {
-    // console.log(e)
     document.querySelector(".input").value += e.target.ariaValueText
   })
 })
